@@ -1,0 +1,486 @@
+/*
+	99Lime.com HTML KickStart by Joshua Gatcke
+	style.css
+
+*/
+
+/*---------------------------------
+	IMPORTS
+-----------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
+
+/*---------------------------------
+	OVERRIDES
+-----------------------------------*/
+h1,h2,h3,h4,h5,h6{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-weight:normal;
+}
+
+thead th,
+tbody th{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+button,
+a.btn,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.menu{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+blockquote{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/*---------------------------------
+	LAYOUT
+-----------------------------------*/
+body{
+margin:0;
+padding:0 0 0 0;
+color:#000;
+background:#000;
+/*background:#efefef url(css/img/gray_jean.png);*/
+font:normal 0.9em/150% "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+text-shadow: 0 0 1px transparent; /* google font pixelation fix */
+}
+
+#wrap{
+    width: 85%;
+    height: auto;
+    background-image:url('fadeBKGR1.jpg');
+    margin: 0 auto 0 auto;
+    padding:0 2%;
+}
+
+
+#footer{
+text-align:center;
+padding:20px;
+margin:0;
+border-top:1px solid #ddd;
+color:#999;
+font-size:0.8em;
+text-shadow:0px 1px 1px #fff;
+position: relative;
+top:0;
+left:0;
+background:#fff;
+}
+
+	#link-top{
+	display:none;
+	}
+
+/* NAV BAR*/
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width: 100%;
+background:#000;
+color:#fff;
+z-index:1000;
+}
+
+	.navbar #logo{
+	position:absolute;
+	top:0;
+	right:0;
+	padding:0.5em 1em;
+	font-size: 1.7em;
+	color:#efefef;
+	text-decoration:none;
+	}
+
+	.navbar span{
+	color:#86dc00;
+	}
+
+
+	.navbar ul{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	}
+
+		.navbar li{
+		margin:0;
+		padding:0;
+		list-style-type:0;
+		display:inline-block;
+		}
+
+		.navbar li a{
+		display:inline-block;
+		color:#efefef;
+		padding:1em 1.3em;
+		text-decoration:none;
+		text-transform: uppercase;
+		line-height:100%;
+		font-size: 1.2em;
+		}
+
+.callout{
+background:#4598ef;/*#86dc00;*/
+padding:3em 0;
+color:#fff;
+box-shadow:inset 0 0 10px rgba(0,0,0,0.2);
+text-align: center;
+text-shadow:0px 1px 3px rgba(0,0,0,0.2);
+display:block;
+}
+	.callout + div.grid{margin-top:50px;}
+	 a.callout{cursor:pointer;}
+	 .callout i.icon-4x{font-size:6em;}
+	 .callout h4{margin-bottom:30px;}
+	 .callout-top{margin:50px 0 0 0;}
+	 .callout p{margin-bottom:0;}
+	 .callout .button{margin-top:10px;}
+	 .callout.green{background:#19ad0b;/*#86dc00;*/}
+
+#mc_embed_signup{
+padding:30px 0;
+}
+
+#ui-preview{
+border:5px solid #ddd;
+margin:30px 0;
+display:block;
+}
+
+/*#FC730A*/
+
+
+/* GOOD NEIGHBOR STYLES BEGIN HERE: */
+
+#logo{
+    margin: 0px 0 0 60px;
+}
+.action-btns{
+    color: #4D99E0;
+    font-size: 17px;
+}
+
+.status-symbols{
+    color: #1fa67a;
+    font-size: 17px;
+}
+
+td{
+    text-align: center;
+}
+
+input[type="checkbox"]{
+    height: 15px;
+    width: 15px;
+}
+
+legend{
+    font-size:26px;
+}
+
+fieldset{
+    opacity: 0.77;
+}
+
+fieldset, legend{
+    background-color: #ccc;
+    border:5px solid #ddd;
+}
+
+#header{
+    color:#fff;
+    
+}
+
+#master-menu {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#master-menu .menu li{
+    color: #E85D3D;
+    margin: 0 30px;
+    font-size: 17px;
+}
+
+#master-menu .menu li a{
+    color: #A8431A;
+}
+/*End Masterheader css */
+
+
+/*Begin Index/Login Page */
+#welcome-box{ 
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    padding: 40px;
+    background-color: #8ABFBA;
+}
+
+#welcome-box h3, p, li{
+    color: #fff;
+}
+
+#welcome-box li{
+    list-style-type: none;
+}
+
+#login-box{
+    margin: 50px 0 0 0;
+    height: 350px;
+    /*
+    border: 2px solid black;
+    background-color: #FFFFFF;
+    */
+}
+
+#login-box fieldset{
+    /*height: 350px;*/
+    /*width: 375px;*/
+}
+
+#login-box form{ 
+/*border: 2px solid black;*/
+width: 260px;
+height: 170px;
+margin: 15px auto 0 auto;
+}
+
+#login-box label{ 
+    margin-left: 5px;
+}
+
+#login-box input{ 
+    float: right;
+    width: 175px;
+}
+
+#login-box input[type="submit"]{
+  margin: 15px 0 0 100px;
+  width: 90px;
+  height: 35px;
+}
+
+#login-box .login-extras{
+    width: 200px;
+    margin: 0 0 0 182px;
+}
+
+#login-box p{
+  float: right;
+}
+
+#login-box .lg-notFound{
+    font-size: 10px;
+    float: right;
+    margin: 0 0 0 100px;
+    /*border: 1px solid black;*/
+    color: red;
+}
+/*END Index/Login Page */
+
+
+
+/*Begin Registration Page*/
+.success{
+    color: green;
+}
+
+.error{
+    color: red;
+}
+
+#reg-form-box {
+    margin: 50px 0 0 0;
+}
+
+#reg-form-box fieldset{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#reg-b1{
+   /* border: 1px solid black;*/
+    float: left;
+    width: 285px;
+    margin: 12px 0 70px 30px;
+}
+
+#reg-b2{
+    /*border: 1px solid black;*/
+    float: left;
+    width: 285px;
+    margin: 12px 0 0 25px;
+}
+
+#reg-form-box label, input, select{
+    /*border: 1px solid black;*/
+    height: 30px;
+    margin: 0 0 10px 0;
+}
+
+#reg-form-box input, select{
+    float: right;
+    width: 170px;   
+}
+
+#reg-form-select{
+    float: right;
+}
+
+#reg-form-box input[type="submit"]{
+  margin: 25px 0 0 0;
+  width: 90px;
+  height: 35px;
+}
+
+#reg-b1 span{
+    display: block;
+    font-size: 10px;
+    margin: 0 0 10px 115px;
+    padding: 0;
+}
+
+#reg-b2 span{
+    display: block;
+    font-size: 10px;
+    margin: 0 0 10px 115px;
+    padding: 0;
+}
+
+#reg-form-box .mem{
+    margin: 250px 0 0 310px;
+    border: 1px solid black;
+    height: 20px;
+    width: 317px;
+}
+
+#reg-message{
+    height: 25px;
+    width: 350px;
+    display: inline-block;
+    margin: 0 60px 0 0;
+}
+/*END Registration Page*/
+
+
+/* Profile page main */
+#profile-main{
+    margin: 20px 0 0 0;
+}
+
+#responder-popup{
+    display: none;
+    width: 220px;
+    height: 135px;
+    background-color: #FFF;
+    text-align: center; 
+    float: right;
+    background: #BDA299;
+}
+/*End Profile page main*/
+
+
+/*Rquest Favor Page */
+#request-wrap{
+
+}
+
+#request-form form{
+    /*border: 2px solid black;*/
+    width: 345px;
+    padding: 20px;
+    margin: 0 0 0 40px;
+}
+
+#request-form label, input, textarea, select{
+    float: left;
+}
+
+#request-form select{
+    margin-left: 10px;
+}
+
+#request-form input{
+    margin-left: 31px;
+    width: 171px;
+}
+
+#request-form textarea{
+    width: 400px;
+    height: 190px;
+    margin: -28px 0 20px 122px;
+}
+
+#request-form  label, input, select {
+    /* border: 1px solid black; */
+    height: 30px;
+    /*margin: 10px 0 0 0;*/
+}
+
+#request-form .req-ck{
+    width: 145px;
+}
+
+#request-form span{
+    margin: 0 0 0 125px;
+    font-size: 10px;
+}
+
+#request-form .f-count-err{
+    /* border: 1px solid black; */
+    width: 350px;
+    margin: 10px 0 0 0;
+    display: inline-block;
+    line-height: 15px;
+}
+
+#request-form .request-success{
+    /* border: 1px solid black; */
+    margin: 290px 0 0 -106px;
+    display: inline-block;
+    height: 20px;
+    width: 215px;
+    font-size: 20px;
+}
+
+#request-form input[type="checkbox"]{
+    height: 15px;
+    width: 15px;
+    margin: 3px 0 0 0;
+    float: right;
+}
+
+#request-form input[type="submit"]{
+    height:35px;
+    width: 90px;
+    margin: 10px 0 10px 430px;
+}
+
+/* Footer Content css */
+#footercontent {
+    /*border: 1px solid black;*/
+    width: 35%;
+    text-align:center;
+    margin: 750px auto 0 auto;
+}
+
+#footercontent ul.breadcrumbs li a {
+    /*border: 1px solid black;*/
+    font-size: 15px;
+}
+/* End of Footer CSS */
+
+
+/*END Rquest Favor Page*/
